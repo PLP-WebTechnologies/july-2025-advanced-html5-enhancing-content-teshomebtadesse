@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Enhanced HTML5, forms, lists, tables, media" />
+  <meta name="description" content="Showcasing HTML5 features" />
+  <meta name="author" content="Teshome B. Tadesse" />
+  <title>HTML5 Enhanced Content teshomebtadesse</title>
+</head>
+
+<body>
+
+  <!-- Header section for page title -->
+  <header>
+    <h1>Welcome to Teshome’s Enhanced HTML Page</h1>
+  </header>
+
+  <!-- Section showcasing an unordered list -->
+  <section>
+    <h3>Popular Agricultural Crops in Ethiopia</h3>
+    <ul>
+      <li>Teff</li>
+      <li>Maize</li>
+      <li>Wheat</li>
+      <li>Enset</li>
+      <li>Coffee</li>
+    </ul>
+    <!--Using <ul> for unordered list of crops common in Ethiopia -->
+    
+      <h3>Crop types by category</h3>
+      <ul>
+        <li>Grains
+          <ul>
+            <li>Teff</li>
+            <li>Maize</li>
+            <li>Wheat</li>
+          </ul>
+        </li>
+        <li>Fruits
+          <ul>
+            <li>Avocado</li>
+            <li>Mango</li>
+            <li>Banana</li>
+          </ul>
+        </li>
+        <li>Vegetables
+          <ul>
+            <li>Tomato</li>
+            <li>Onion</li>
+            <li>Carrot</li>
+          </ul>
+        </li>
+  </section>
+
+  <!-- Section with a table -->
+  <section>
+    <h3>Crop Yield by Region</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Central</th>
+          <th>Crop</th>
+          <th>Year</th>
+          <th>Yield (kg/hectare)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Oromia</td>
+          <td>Teff</td>
+          <td>2023</td>
+          <td>1500</td>
+        </tr>
+        <tr>
+          <td>Amhara</td>
+          <td>Maize</td>
+          <td>2023</td>
+          <td>1800</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Semantic table with headers for clarity and accessibility -->
+  </section>
+
+  <!-- Media integration -->
+  <section>
+    <h2>Media Showcase</h2>
+    <p>Enjoy the rich culture of Ethiopian music and farming practices.</p>
+    
+    <h3>Farming in Action</h3>
+    <img src="farmers.jpg" alt="Farmers working in a Wheat field" width="500" height="300" />
+    
+    <h3>Embeded video from PIXELS</h3>
+    <video width="300" height="200" controls>
+      <source src="https://videos.pexels.com/video-files/6966497/6966497-uhd_1440_2560_30fps.mp4" type="video/mp4">
+        Your browser does not support the videos.
+    </video>
+    
+    <h3>Ethiopian iconic music by Teddy Afro - Ethiopia</h3>
+    <audio src="TeddyAfro_Ethiopia.mp3" controls type="audio/mpeg" autoplay loop muted> TeddyAfro_Ethiopia</audio>
+    </audio>
+
+  </section>
+
+  <!-- HTML5 Form Section -->
+  <section>
+    <h2>Farmer Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name here" required /><br /><br />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="45" placeholder="Enter your age here." />
+            
+         <br /><br />
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date" name="date">
+        <br /><br />
+
+        <label for="Gender">Gender</label>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female
+
+        <br /><br />
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="username@example.com" required /><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" maxlength="12" placeholder="enter your phone number here" />
+        <!--pattern ensures 12-digit input -->
+        <br /><br />
+        <label for="region">Region:</label>
+        <select id="region" name="region" required>
+          <option value="">Select your region</option>
+          <option value="CER">Central Ethiopia</option>
+          <option value="oromia">Oromia</option>
+          <option value="amhara">Amhara</option>
+          <option value="tigray">Tigray</option>
+        </select>
+        <br /><br />
+        <label for="sercices">Services:</label>
+        <input type="checkbox" name="services" value="Training" /> Training
+        <input type="checkbox" name="services" value="Financial Support" /> Financial Support
+        <input type="checkbox" name="services" value="Equipment Rental" /> Equipment Rental
+        <input type="text" id="other-services" name="other-services" placeholder="Other services (optional)" />
+      </fieldset>
+
+      <button type="submit">Submit Registration</button>
+      <!-- Native HTML5 button with type="submit" -->
+    </form>
+  </section>
+
+</body>
+
+  <!-- Footer -->
+<footer>
+  <p>© 2025 ABCD</p>
+</footer>
+  <!-- Footer with copyright notice -->
+</html>
