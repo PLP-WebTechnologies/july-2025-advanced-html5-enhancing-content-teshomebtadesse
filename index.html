@@ -134,6 +134,9 @@
         <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" maxlength="12" placeholder="enter your phone number here" />
         <!--pattern ensures 12-digit input -->
         <br /><br />
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="Ethiopia" autocomplete="country"readonly />
+        
         <label for="region">Region:</label>
         <select id="region" name="region" required>
           <option value="">Select your region</option>
@@ -148,6 +151,9 @@
         <input type="checkbox" name="services" value="Financial Support" /> Financial Support
         <input type="checkbox" name="services" value="Equipment Rental" /> Equipment Rental
         <input type="text" id="other-services" name="other-services" placeholder="Other services (optional)" />
+        <br><br />
+        <label for="name">Upload ID card</label>
+        <input type="file" id="id-card" name="id-card" accept=".jpg, .jpeg, .png" required />
       </fieldset>
 
       <button type="submit">Submit Registration</button>
